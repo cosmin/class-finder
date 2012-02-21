@@ -10,11 +10,11 @@
      (let [classes (if (glob? classname)
                      (.findClassesByGlob @class-finder classname)
                      (.findClassesByName @class-finder classname))]
-       (apply list classes)))
+       (apply sorted-set classes)))
   ([classname package-prefix]
      (let [classes (if (glob? classname)
                      (.findClassesInPackageByGlob @class-finder
                                                   package-prefix classname)
                      (.findClassesInPackageByName @class-finder
                                                   package-prefix classname))]
-       (apply list classes))))
+       (apply sorted-set classes))))
