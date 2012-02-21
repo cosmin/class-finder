@@ -4,7 +4,7 @@
 
     <groupId>com.offbytwo.class-finder</groupId>
     <artifactId>class-finder</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <packaging>clojure</packaging>
     <name>class-finder</name>
